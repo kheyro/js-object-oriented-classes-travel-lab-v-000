@@ -1,3 +1,4 @@
+
 class Driver {
   constructor(name, startDate) {
     this.name = name
@@ -8,7 +9,6 @@ class Driver {
     return year-this.startDate.getFullYear()
   }
 }
-
 
 class Route {
 

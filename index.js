@@ -15,12 +15,12 @@ class Route {
   constructor(beginningLocation, endingLocation) {
     this.beginningLocation = beginningLocation
     this.endingLocation = endingLocation
-    const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
+    const this.eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
   }
 
   blocksTravelled() {
-    vertical = endingLocation.vertical - beginningLocation.vertical
-    horizontal = eastWest.indexOf(endingLocation) - eastWest.indexOf(beginningLocation)
+    vertical = this.endingLocation.vertical - this.beginningLocation.vertical
+    horizontal = this.eastWest.indexOf(endingLocation) - this.eastWest.indexOf(beginningLocation)
     return vertical + horizontal
   }
 

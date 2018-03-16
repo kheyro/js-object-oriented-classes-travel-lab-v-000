@@ -22,7 +22,7 @@ class Route {
     console.log(this.endingLocation.vertical)
     evertical = this.endingLocation.vertical - this.beginningLocation.vertical
     ehorizontal = this.eastWest.indexOf(this.endingLocation.horizontal) - this.eastWest.indexOf(this.beginningLocation.horizontal)
-    return this.vertical + this.horizontal
+    return evertical + ehorizontal
   }
 
 }

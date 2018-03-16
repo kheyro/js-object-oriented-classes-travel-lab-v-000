@@ -11,7 +11,7 @@ class Driver {
 
 
 class Route {
-  
+
   let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
   constructor(beginningLocation, endingLocation) {
@@ -21,7 +21,8 @@ class Route {
 
   blocksTravelled() {
     vertical = endingLocation.vertical - beginningLocation.vertical
-    horizontal =
+    horizontal = eastWest.indexOf(endingLocation) - eastWest.indexOf(beginningLocation)
+    return vertical + horizontal
   }
 
 }
